@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {display: flex;
+            justify-content: center;
+        }
+        .painting {
+            width: 700px;
+            height: 700px;
+            border: .5rem solid;
+            display: grid;
+            grid-template-columns:1fr 4fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .itemborder {
+            border: 5px solid;
+        }
+        #item1 {
+            background-color: rgb(250, 245, 200);
+        }
+        #item2 {
+            background-color: rgb(233, 53, 53);
+            grid-row: span 2;
+        }
+        #item3 {
+            background-color: rgb(109, 240, 222);
+        } 
+        #item4 {
+            background-color: rgb(62, 97, 255);
+        }
+        #item5 {
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        #item6 {
+            background-color: rgb(250, 245, 200);
+            grid-row: span 2;
+            border-right: 10px solid;
+        }
+
+        #item7 {
+            background-color: rgb(250, 245, 200);
+            border-bottom: 10px solid;
+        }
+
+        #item8 {
+            background-color: rgb(253, 240, 49);
+        }
+    </style>
+    <title>Mondrain Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="painting">
+            <div id="item1" class="itemborder"></div>
+            <div id="item2" class="itemborder"></div>
+            <div id="item3" class="itemborder"></div>
+            <div id="item4" class="itemborder"></div>
+            <div id="item5" class="itemborder">
+                <div id="item6"></div>
+                <div id="item7"></div>
+                <div id="item8"></div>
+                <div id="item9"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
